@@ -20,7 +20,7 @@ import org.springframework.stereotype.Component;
 public class LogAspect {
      private final Log log = LogFactory.getLog(getClass());
 
-    @Before("execution(* com.withstars.controller.UserController.signin(..))")
+    @Before("execution(* com.xupt.edu.controlller.UserController.signin(..))")
     public void loginLogAspect(JoinPoint joinPoint){
         String methodName=joinPoint.getSignature().toShortString();
         String args=joinPoint.getArgs().toString();

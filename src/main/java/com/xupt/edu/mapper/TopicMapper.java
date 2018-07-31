@@ -1,6 +1,6 @@
 package com.xupt.edu.mapper;
 
-import com.withstars.domain.Topic;
+import com.xupt.edu.pojo.Topic;
 
 import java.util.List;
 

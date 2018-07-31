@@ -1,13 +1,14 @@
 package com.xupt.edu.controlller;
 
-import com.withstars.domain.Reply;
-import com.withstars.domain.Tab;
-import com.withstars.domain.Topic;
-import com.withstars.domain.User;
-import com.withstars.service.impl.ReplyServiceImpl;
-import com.withstars.service.impl.TabServiceImpl;
-import com.withstars.service.impl.TopicServiceImpl;
-import com.withstars.service.impl.UserServiceImpl;
+
+import com.xupt.edu.pojo.Reply;
+import com.xupt.edu.pojo.Tab;
+import com.xupt.edu.pojo.Topic;
+import com.xupt.edu.pojo.User;
+import com.xupt.edu.service.impl.ReplyServiceImpl;
+import com.xupt.edu.service.impl.TabServiceImpl;
+import com.xupt.edu.service.impl.TopicServiceImpl;
+import com.xupt.edu.service.impl.UserServiceImpl;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.springframework.beans.factory.annotation.Autowired;

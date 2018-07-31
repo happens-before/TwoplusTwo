@@ -21,6 +21,7 @@ public class TabServiceImpl implements TabService {
     }
 
     public Tab getByTabNameEn(String tabNameEn) {
-        return tabDao.getByTabNameEn(tabNameEn);
+        Tab tab=tabDao.getByTabNameEn(tabNameEn);
+       return  tab;
     }
 }

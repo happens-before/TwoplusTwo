@@ -1,12 +1,13 @@
 package com.xupt.edu.controlller;
 
-import com.withstars.domain.LoginLog;
-import com.withstars.domain.Topic;
-import com.withstars.domain.User;
-import com.withstars.service.impl.LoginLogServiceImpl;
-import com.withstars.service.impl.TopicServiceImpl;
-import com.withstars.service.impl.UserServiceImpl;
-import com.withstars.util.ProduceMD5;
+
+import com.xupt.edu.pojo.LoginLog;
+import com.xupt.edu.pojo.Topic;
+import com.xupt.edu.pojo.User;
+import com.xupt.edu.service.impl.LoginLogServiceImpl;
+import com.xupt.edu.service.impl.TopicServiceImpl;
+import com.xupt.edu.service.impl.UserServiceImpl;
+import com.xupt.edu.util.ProduceMD5;
 import eu.bitwalker.useragentutils.UserAgent;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;

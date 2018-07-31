@@ -1,6 +1,7 @@
 package com.xupt.edu.mapper;
 
-import com.withstars.domain.Tab;
+
+import com.xupt.edu.pojo.Tab;
 
 import java.util.List;
 

@@ -1,6 +1,7 @@
 package com.xupt.edu.controlller;
 
-import com.withstars.service.impl.LoginLogServiceImpl;
+
+import com.xupt.edu.service.impl.LoginLogServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 
