@@ -70,29 +70,6 @@
         </ul>
     </div>
 
-
-    <div class="panel panel-default" id="sidebar1" style="width: 20%;margin:1% 2% 1% 0%;float: right">
-    <div class="panel-heading" style="background-color: white;text-align: center">
-        论坛指导原则
-    </div>
-    <ul class="list-group" style="width: 100%">
-        <li class="list-group-item">
-            <h5>尊重原创</h5>
-            <p>
-                请不要发布任何盗版下载链接，包括软件、音乐、电影等等。
-            </p>
-        </li>
-
-        <li class="list-group-item">
-            <h5>友好互助</h5>
-            <p>
-                保持对学习的热情。用知识去帮助别人。
-            </p>
-        </li>
-    </ul>
-</div>
-
-
 <!-- 引入footer文件 -->
 <%@ include file="footer.jsp"%>
 

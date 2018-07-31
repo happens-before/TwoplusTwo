@@ -12,16 +12,16 @@
                 <!--向左对齐-->
                 <ul class="nav navbar-nav navbar-left">
                     <li <c:if test="${tab.tabNameEn == 'tech'}">
-                            class="active" </c:if>><a href="/tab/tech">技术</a>
+                            class="active" </c:if>><a href="/tab/tech">技术大咖</a>
                     </li>
                     <li <c:if test="${tab.tabNameEn == 'play'}">class="active"
-                        </c:if>><a href="/tab/play">好玩</a></li>
+                        </c:if>><a href="/tab/play">开心一刻</a></li>
                     <li <c:if test="${tab.tabNameEn == 'creative'}">class="active"
-                        </c:if>><a href="/tab/creative">创意</a></li>
+                        </c:if>><a href="/tab/creative">创新思维</a></li>
                     <li <c:if test="${tab.tabNameEn == 'jobs'}">class="active"
-                         </c:if>><a href="/tab/jobs">工作</a></li>
+                         </c:if>><a href="/tab/jobs">工作空间</a></li>
                     <li <c:if test="${tab.tabNameEn == 'deals'}">class="active"
-                        </c:if>><a href="/tab/deals">交易</a></li>
+                        </c:if>><a href="/tab/deals">交易记录</a></li>
 
                 </ul>
 
