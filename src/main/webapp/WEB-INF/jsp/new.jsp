@@ -7,7 +7,7 @@
     <link href="${pageContext.request.contextPath}/static/css/bootstrap.min.css" rel="stylesheet">
     <script src="${pageContext.request.contextPath}/static/js/jquery-3.2.1.js"></script>
     <script src="${pageContext.request.contextPath}/static/js/bootstrap.min.js"></script>
-    <title>创作新主题 › Two plus Two </title>
+    <title> Two plus Two </title>
 </head>
 <body>
 <!-- 引入header文件 -->

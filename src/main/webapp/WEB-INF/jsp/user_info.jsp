@@ -7,7 +7,7 @@
     <link href="${pageContext.request.contextPath}/static/css/bootstrap.min.css" rel="stylesheet">
     <script src="${pageContext.request.contextPath}/static/js/jquery-3.2.1.js"></script>
     <script src="${pageContext.request.contextPath}/static/js/bootstrap.min.js"></script>
-    <title>Genesis › <c:if test="${!empty userInfo}">${userInfo.username}</c:if><c:if test="${!empty errorInfo}">会员未找到</c:if></title>
+    <title> <c:if test="${!empty userInfo}">${userInfo.username}</c:if><c:if test="${!empty errorInfo}">会员未找到</c:if></title>
 </head>
 <body>
 <!-- 引入header文件 -->

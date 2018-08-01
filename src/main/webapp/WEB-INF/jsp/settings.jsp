@@ -7,7 +7,7 @@
     <link href="${pageContext.request.contextPath}/static/css/bootstrap.min.css" rel="stylesheet">
     <script src="${pageContext.request.contextPath}/static/js/jquery-3.2.1.js"></script>
     <script src="${pageContext.request.contextPath}/static/js/bootstrap.min.js"></script>
-    <title>Two plus Two ›设置</title>
+    <title>Two plus Two </title>
 </head>
 <body>
 <!-- 引入header文件 -->

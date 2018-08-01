@@ -4,7 +4,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>注册 - Two plus Two</title>
+    <title>Two plus Two</title>
     <link href="${pageContext.request.contextPath}/static/css/bootstrap.min.css" rel="stylesheet">
     <script src="${pageContext.request.contextPath}/static/js/jquery-3.2.1.js"></script>
     <script src="${pageContext.request.contextPath}/static/js/bootstrap.min.js"></script>
