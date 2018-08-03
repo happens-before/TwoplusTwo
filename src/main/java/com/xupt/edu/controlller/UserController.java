@@ -38,7 +38,6 @@ public class UserController {
     @Autowired
     public TopicServiceImpl topicService;
 
-
     /**
      * 用户注册
      */
@@ -57,7 +56,7 @@ public class UserController {
         //生成随机数，用于生成头像URL
         Random rand=new Random();
         int randomNum=rand.nextInt(10)+1;
-        String avatarUrl="/img/avatar/avatar-default-"+randomNum+".jpg";
+        String avatarUrl="img/avatar/avatar-default-"+randomNum+".jpg";
         //初始化User对象
         user.setUsername(request.getParameter("username"));
         user.setPassword(password);
@@ -187,10 +186,14 @@ public class UserController {
 
         //最热主题
         List<Topic> hotestTopics=topicService.listMostCommentsTopics();
-
+        //获取统计信息
+        int topicsNum=topicService.getTopicsNum();
+        int usersNum=userService.getUserCount();
         ModelAndView mv=new ModelAndView("settings");
         mv.addObject("user",user);
         mv.addObject("hotestTopics",hotestTopics);
+        mv.addObject("usersNum",usersNum);
+        mv.addObject("topicsNum",topicsNum);
         return mv;
     }
 
@@ -202,10 +205,14 @@ public class UserController {
 
         //最热主题
         List<Topic> hotestTopics=topicService.listMostCommentsTopics();
-
+        //获取统计信息
+        int topicsNum=topicService.getTopicsNum();
+        int usersNum=userService.getUserCount();
         ModelAndView mv=new ModelAndView("update_avatar");
         mv.addObject("user",user);
         mv.addObject("hotestTopics",hotestTopics);
+        mv.addObject("usersNum",usersNum);
+        mv.addObject("topicsNum",topicsNum);
         return mv;
     }
     @RequestMapping(value = "/settings/avatar/update",method = RequestMethod.POST)
@@ -231,14 +238,13 @@ public class UserController {
                 e.printStackTrace();
             }
         }
-        User user=userService.getUserById(uid);
-
+//        User user=userService.getUserById(uid);
         //最热主题
-        List<Topic> hotestTopics=topicService.listMostCommentsTopics();
-        res.put("msg", "ok");
+//        List<Topic> hotestTopics=topicService.listMostCommentsTopics();
 //        ModelAndView mv=new ModelAndView("update_avatar");
 //        mv.addObject("user",user);
 //        mv.addObject("hotestTopics",hotestTopics);
+        res.put("msg", "ok");
         return res;
     }
 }

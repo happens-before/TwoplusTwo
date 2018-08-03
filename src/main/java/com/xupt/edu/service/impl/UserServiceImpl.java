@@ -19,19 +19,12 @@ public class UserServiceImpl implements UserService {
 
     //登录验证 0:用户名不存在 1:密码错误 2:验证成功
     public int login(String username,String password) {
-        //判断username是否存在
-        //boolean existUsername=existUsername(username);
-        //若username存在，验证密码
-        //if (existUsername){
             User resUser=userDao.selectByUsername(username);
-            System.out.println(resUser);
+            //System.out.println(resUser);
             if (resUser.getPassword().equals(password)==true){
                 return 2;
             }
             return 1;
-
-        //}
-        //return 0;
     }
 
     //登陆后获取用户信息

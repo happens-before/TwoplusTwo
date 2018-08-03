@@ -104,6 +104,7 @@
     // 若选择记住登录信息，则进入页面时设置登录信息
     function setLoginStatus() {
         var loginStatusText = Cookies.get('loginStatus')
+        console.log(loginStatusText)
         if (loginStatusText) {
             var loginStatus
             try {

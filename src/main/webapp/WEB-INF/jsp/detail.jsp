@@ -57,7 +57,7 @@
         <!-- 遍历评论 -->
         <c:forEach items="${replies}" var="reply">
         <li class="list-group-item">
-            <div style="height: 50px">
+            <div style="height: 120px">
                 <div style="float: left;width: 6%;margin-bottom: 5px">
                     <img width="50px" height="50px" src="${reply.user.avatar} " class="img-rounded">
                 </div>
@@ -81,14 +81,14 @@
 
 <div class="panel panel-default" id="main" style="">
     <div class="panel-heading" style="background-color: white">
-        添加一条新回复(不要超过50字）
+        添加一条新回复
     </div>
     <div class="panel-body">
         <div class="form-group">
             <form action="/reply/add" method="post">
                 <input type="hidden" name="topicId" value="${topic.id}">
                 <input type="hidden" name="replyUserId" value="${user.id}">
-                <textarea class="form-control" rows="3" name="content" required="required"></textarea><br/>
+                <textarea class="form-control" rows="10" name="content" required="required"></textarea><br/>
             <input type="submit" class="btn btn-default btn-sm" value="回复">
             </form>
         </div>

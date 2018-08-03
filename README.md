@@ -1,0 +1,43 @@
+1.项目介绍：TwoplusTwo论坛是一个便于实验室互联网技术交流讨论的一个论坛平台。
+项目总结：SSM框架，Maven管理jar包，Nginx做图片服务器和做反向代理将
+请求交给Tomcat，Redis做缓存，实现动静分离，负载均衡，Session分离。
+2.功能：登陆，注册，修改头像，查看帖子，发表帖子和发表评论。
+3.数据库设计：
+    3.1.共有5个数据表：login_log，reply，tab，topic，user
+    3.2.
+4.开发环境与开发框架
+    Windows10+IDEA+Git+SSM+Maven+jsp
+5.结构
+**--src
+    --main
+        --java**
+            --com.xupt.edu
+                --aop
+                --controlller
+                --intercepter
+                --mapper
+                --pojo
+                --service
+                --util
+        **--resources**
+            --mapper
+            --applicationContext.xml
+            --jdbc.properties
+            --log4j.properties
+            --mybatis-config.xml
+        **--webapp**
+            --static
+                --js
+                --img
+                --css
+            --WEB-INF
+                --jsp
+                --web.xml
+                --main-servlet.xml
+6.遇到的问题
+    6.1.前端页面与后端控制怎样交互，流程是怎样的？
+    
+    6.2.
+    6.3.
+    6.4.
+    
