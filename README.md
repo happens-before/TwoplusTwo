@@ -92,6 +92,9 @@
         6.4.3.安装mysql  ---yum install mysql mysql-server mysql-devel -y
         6.4.4.安装tomcat   ---通过文件传输方式传输压缩包
         6.4.5.将项目war包放在webapp目录下，在浏览器运行。（出现路径访问问题）   
+        <Host name="localhost"  appBase="webapps"
+               unpackWARs="true" autoDeploy="true">
+        <Context path="/" docBase="twoplustwo" debug="0" reloadable="false" />
 7.总结
     在项目中，利用HttpServletRequest获取页面信息，ModelAndView重定向页面及返回页面渲染信息实现前后端交互;
     使用nginx实现负载均衡，动静分离，采用redis作缓存解决session分离问题;利用cookie保存用户信息实现“记住密码”功能。

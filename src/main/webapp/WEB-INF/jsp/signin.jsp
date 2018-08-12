@@ -141,12 +141,12 @@
                 dataType: "json",
 
                 success: function(data) {
-                    console.log(data.stateCode.trim());
-                    if(data.stateCode == "0") {
+                    console.log(data.stateCode);
+                    if(data.stateCode == "fail") {
                         $("#info").text("提示:用户名不存在!");
-                    } else if(data.stateCode == "1") {
+                    } else if(data.stateCode == "mima") {
                         $("#info").text("提示:密码错误!");
-                    } else if(data.stateCode== "2"){
+                    } else if(data.stateCode== "ok"){
                         if(remember){
                             rememberLogin(id,passwd,remember);
                         }else {

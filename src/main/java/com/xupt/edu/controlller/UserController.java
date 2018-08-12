@@ -113,15 +113,15 @@ public class UserController {
             log.setLoginTime(new Date());
             boolean ifSuccAddLog=loginLogService.addLog(log);
 
-            res.put("stateCode", "2");
+            res.put("stateCode", "ok");
         }
         //密码错误
         else if (loginVerify == 1){
-            res.put("stateCode", "1");
+            res.put("stateCode", "mima");
         }
         //用户名不存在
         else {
-            res.put("stateCode", "0");
+            res.put("stateCode", "fail");
         }
         return res;
     }

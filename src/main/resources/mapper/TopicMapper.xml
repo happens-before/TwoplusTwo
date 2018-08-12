@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
 <mapper namespace="com.xupt.edu.mapper.TopicMapper" >
-
+  <cache eviction="LRU" flushInterval="60000" readOnly="false" size="1024"  ></cache>
   <!-- 主题基本结果集  -->
   <resultMap id="BaseResultMap" type="com.xupt.edu.pojo.Topic" >
     <id column="id" property="id" jdbcType="INTEGER" />
