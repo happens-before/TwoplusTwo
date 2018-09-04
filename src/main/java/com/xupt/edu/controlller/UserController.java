@@ -100,6 +100,8 @@ public class UserController {
             //用户信息写入session
             session.setAttribute("userId",userId);
             session.setAttribute("username",username);
+            session.setAttribute("date",new Date());
+
             //获取登录信息
             String ip=getRemortIP(request);
             UserAgent userAgent = UserAgent.parseUserAgentString(request.getHeader("User-Agent"));
