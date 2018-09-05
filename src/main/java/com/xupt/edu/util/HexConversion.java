@@ -1,13 +1,6 @@
 package com.xupt.edu.util;
 
-/**
- * Created with IntelliJ IDEA.
- * Description:
- * User: withstars
- * Date: 2018-02-15
- * Time: 10:57
- * Mail: withstars@126.com
- */
+
 public class HexConversion {
 
     /**
