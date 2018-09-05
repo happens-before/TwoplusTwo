@@ -7,14 +7,7 @@ import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Before;
 import org.springframework.stereotype.Component;
 
-/**
- * Created with IntelliJ IDEA.
- * Description:
- * User: withstars
- * Date: 2018-02-22
- * Time: 20:41
- * Mail: withstars@126.com
- */
+
 @Component
 @Aspect
 public class LogAspect {

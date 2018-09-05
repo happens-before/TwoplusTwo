@@ -6,6 +6,7 @@ import java.util.Date;
  * 登录日志实体类
  */
 public class LoginLog extends BaseDomain {
+
     private Long id;
 
     private Integer userId;
@@ -15,8 +16,6 @@ public class LoginLog extends BaseDomain {
     private String ip;
 
     private String device;
-
-
 
     public Long getId() {
         return id;
